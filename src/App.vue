@@ -1,6 +1,7 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <hello-world></hello-world><br>
+  <hello-world></hello-world><br>
+  <hello-world></hello-world>
 </template>
 
 <script>
@@ -9,7 +10,12 @@ import HelloWorld from './components/HelloWorld.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+  },
+  data(){
+    return{
+      counter:0
+    }
   }
 }
 </script>
@@ -23,4 +29,8 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+  body{
+    margin-top: 0;
+  }
+
 </style>
